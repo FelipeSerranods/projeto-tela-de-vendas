@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina de vendas - Sizebay</title>
+</head>
+
+<body>
+    <header>
+        <!--Telas Pequenas-->
+        <nav class="nav-hambuguer">
+            <button class="btn-hambuguer">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </button>
+            <nav class="menu-hiden">
+                <button class="btn-menu"><a href="#">MASCULINO</a></button>
+                <button class="btn-menu"><a href="#">FEMININO</a></button>
+                <button class="btn-menu"><a href="#">INFANTIL</a></button>
+                <button class="btn-menu"><a href="#">CALÇADOS</a></button>
+                <button class="btn-menu"><a href="#">MODA ÍNTIMA</a></button>
+                <button class="btn-menu"><a href="#">ACESSÓRIOS</a></button>
+                <button class="btn-menu"><a href="#">FAZER LOGIN</a></button>
+                <button class="btn-menu"><a href="#">CRIAR CONTA</a></button>
+                <div class="campoDeBusca">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Pesquisar">
+                </div>
+            </nav>
+        </nav>
+        <!--Telas Medias e Grandes-->
+        <nav class="nav-padrao">
+            <div class="campoDeBusca">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar">
+            </div>
+        </nav>
+        <div class="conta">
+            <p><a href="#">Fazer login</a> ou <a href="#">Criar Conta</a></p>
+            <button class="btn-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="span-menu">Carrinho</span>
+            </button>
+        </div>
+        <div class="trocarIdioma">
+            <span>Português</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="container-img">
+            <img src="img/Brand_Mark_Tag_Sizebay-REFINED_2x_2_360x.avif" alt="logo-sizebay" width="250px">
+        </div>
+        <div class="container-lista">
+            <ul style>
+                <li><a href="#" class="link-header">MASCULINO</a></li>
+                <li><a href="#" class="link-header">FEMININO</a></li>
+                <li><a href="#" class="link-header">INFANTIL</a></li>
+                <li><a href="#" class="link-header">CALÇADOS</a></li>
+                <li><a href="#" class="link-header">MODA ÍNTIMA</a></li>
+                <li><a href="#" class="link-header">ACESSÓRIOS</a></li>
+            </ul>
+        </div>
+        <section class="section-grid">
+            <div class="section-left">
+                <div class="span-menu">
+                    <span class="span-conteudo-atual">Início<i class="fa-solid fa-angle-right fa-1x"></i>Feminino<i class="fa-solid fa-angle-right fa-1x"></i>Sopro do oceano</span>
+                </div>
+                <div id="container-img-figurino">
+                    <img src="img/mulher-fundo-azul1.jpg" alt="figurino com jaqueta nylon bombem" id="img-figurino" class="carrosel-img">
+                    <button class="btn-figurino-img">
+                        <a href="https://vfr-v3-production.sizebay.technology/V4/?mode=vfr&id=6834318&sid=0268AE364B4D212" target="_blank">
+                            PROVADOR VIRTUAL
+                        </a>
+                    </button>
+                </div>
+                <div class="nav-imagens">
+                    <label class="barra" for="slide1"></label>
+                    <label class="barra" for="slide2"></label>
+                    <label class="barra" for="slide3"></label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="slide" id="slide1">
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="descriProduto">
+                    <p>CONJUNTO VERÃO 2024</p>
+                    <h2>Sopro do oceano</h2>
+                    <p>$350.00</p>
+                </div>
+                <div class="selecionar-tamanho">
+                    <label for="tamanho">Escolha o tamanho:</label>
+                    <select id="tamanho" name="tamanho">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </div>
+                <div class="section-right-button">
+                    <button class="btn-figurino">
+                        <a href="https://vfr-v3-production.sizebay.technology/V4/?mode=chart&id=6834318&sid=0268AE364B4D21" target="_blank">
+                            <i class="fa-solid fa-person-burst"></i>
+                            PROVADOR VIRTUAL
+                        </a>
+                    </button>
+                    <button class="btn-medidas">
+                        <a href="https://vfr-v3-production.sizebay.technology/V4/?mode=chart&id=6834318&sid=0268AE364B4D21" target="_blank">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            TABELA DE MEDIDAS
+                        </a>
+                    </button>
+                </div>
+                <button class="btn-addCarrinho">
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        ADICIONAR AO CARRINHO
+                    </a>
+                </button>
+                <div class="paragrafo-figurino">
+                    <p class="paragrafo-1">
+                        Para os produtos superiores do gênero feminino, as medidas corporais consideradas para a recomendação e demonstradas para o cliente visualizar o caimento são o busto e a cintura.
+                    </p>
+                    <p>
+                        This store is not real and the products contained therein are not for sale. The products exist solely for technological testing and development purposes. Sizebay is not a store and no purchases will be processed.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Calçados</a></li>
+                    <li><a href="#">Moda Íntima</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Siga nossas contas</h3>
+                <div class="footer-social">
+                    <button class="btn-facebook"><i class="fa-brands fa-square-facebook fa-2xl"></i></button>
+                    <button class="btn-instagram"><i class="fa-brands fa-square-instagram fa-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Direitos autorais © 2024, Sizebay. Com tecnologia da Shopify</p>
+        </div>
+        
+    </footer>
+
+    <script src="https://kit.fontawesome.com/10b4b15b8d.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
