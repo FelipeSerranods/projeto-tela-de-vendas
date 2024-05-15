@@ -1,23 +1,21 @@
-document.querySelector('.btn-hambuguer').addEventListener('click', function () {
-    let menu = document.querySelector('.menu-hiden');
-    menu.classList.toggle('show');
-});
+document.querySelector('.btn-hambuguer').addEventListener('click', () =>{
+    let menu = document.querySelector('.menu-hiden')
+    menu.classList.toggle('show')
+})
 
+let imagens = ["img/mulher-fundo-azul1.jpg", "img/mulher-fundo-azul2.jpg" , "img/mulher-fundo-branco.jpg"]
+let barras = document.querySelectorAll('.barra')
+let imagem = document.querySelector('.carrosel-img')
 
-let imagens = ["img/mulher-fundo-azul1.jpg", "img/mulher-fundo-azul2.jpg" , "img/mulher-fundo-branco.jpg"];
-
-for (let i = 0; i < imagens.length; i++) {
-    document.querySelector('.barra:nth-child(' + (i + 1) + ')').addEventListener('click', ()=> {
-        trocarImagem(i);
-    });
-}
+barras.forEach((barra, i) => {
+    barra.addEventListener('click', () => {
+        trocarImagem(i)
+    })
+})
 
 function trocarImagem(indice) {
-    let imagem = document.querySelector('.carrosel-img');
-    imagem.src = imagens[indice];
+    imagem.src = imagens[indice]
+    
+    barras.forEach((barra) => barra.classList.remove('barra-selecionada'))
+    barras[indice].classList.add('barra-selecionada')
 }
-
-
-
-
-
